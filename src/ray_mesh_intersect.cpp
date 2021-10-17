@@ -37,7 +37,7 @@ npe_doc(ds_ray_mesh_intersect)
 
 npe_arg(source, dense_float, dense_double)
 npe_arg(dir, npe_matches(source))
-npe_arg(v, npe_matches(source))
+npe_arg(v, dense_float, dense_double)
 npe_arg(f, dense_int, dense_long, dense_longlong)
 
 
@@ -56,47 +56,3 @@ npe_begin_code()
   return hits_res;
 
 npe_end_code()
-
-
-// const char* ds_ray_mesh_intersect = R"igl_Qu8mg5v7(
-
-// Parameters
-// ----------
-
-
-// Returns
-// -------
-
-
-// See also
-// --------
-
-
-// Notes
-// -----
-// None
-
-// Examples
-// --------
-
-//  Outputs:
-
-// )igl_Qu8mg5v7";
-
-// npe_function(ray_mesh_intersect)
-// npe_doc(ds_ray_mesh_intersect)
-
-// npe_arg(source, dense_float, dense_double)
-// npe_arg(dir, dense_float, dense_double)
-// npe_arg(v, dense_float, dense_double)
-// npe_arg(f, dense_int, dense_long)
-
-
-// npe_begin_code()
-
-//   igl::Hit & hit;
-//   igl::ray_mesh_intersect(source, dir, v, f, hit);
-//   return npe::move(hit);
-
-// npe_end_code()
-
