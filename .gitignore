@@ -15,7 +15,7 @@ pyigl.cpython*
 pyigl_classes.cpython*
 __pycache__
 
-igl.egg-info
+fakeigl.egg-info
 *.code-workspace
 out.obj
 test.off
